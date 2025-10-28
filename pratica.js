@@ -38,4 +38,12 @@
 //     alert(resultado)
 // }
 
+const button=document.getElementById("botaocontador")
+const campotexto = document.getElementById("campotexto")
+let contadorDeCliques=0
+button.addEventListener('click', function() {
+    contadorDeCliques++;
+    console.log(contadorDeCliques)
+    campotexto.value=contadorDeCliques
+});
 
